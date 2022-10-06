@@ -26,7 +26,7 @@ describe('la función maximo', () => {
 describe('la función minimo', () => {
     test('Retorna correctamente el número más pequeño de una lista', () => {
         expect(minimo([1, 2, 3, 4, 5, 6])).toBe(1);
-        expect(minimo([-1, -2, -3, -4, -5, -6])).toBe(-5);
+        expect(minimo([-1, -2, -3, -4, -5, -6])).toBe(-6);
         expect(minimo([100, 2, 3, 4, 5, 6])).toBe(2);
         expect(minimo([-1, 2, -3, 4, -5, 6])).toBe(-5);
     });
