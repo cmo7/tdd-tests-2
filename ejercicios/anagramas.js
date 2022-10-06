@@ -1,5 +1,5 @@
 /**
- *
+ * Función que comprueba si dos palabras son anagrama la una de la otra.
  * @param {string} palabra1
  * @param {string} palabra2
  * @return {boolean}
