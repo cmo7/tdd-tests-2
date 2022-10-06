@@ -1,5 +1,5 @@
 import {describe, test, expect} from 'vitest';
-import {maximo, suma} from '../ejercicios/matematicas';
+import {maximo, suma, media, minimo} from '../ejercicios/matematicas';
 
 describe('La función suma', () => {
     test('Suma correctamente los elementos de una lista', () => {
