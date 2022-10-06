@@ -1,0 +1,24 @@
+{
+  "name": "tdd-tests-2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest --coverage",
+    "test-anagramas": "vitest anagramas",
+    "test-cuadrados": "vitest cuadrados",
+    "test-matematicas": "vitest matematicas",
+    "test-primos": "vitest primos",
+    "test-quitarElementos": "vitest quitarElementos"
+  },
+  "devDependencies": {
+    "eslint": ">=5.16.0",
+    "eslint-config-google": "^0.14.0",
+    "vite": "^3.1.0",
+    "vitest": "^0.23.4"
+  }
+}
