@@ -5,5 +5,5 @@
  * @return {array}
  */
 export function quitarElementos(lista) {
-    return [];
+    return lista.filter((x, i) => i % 2 === 0);
 }

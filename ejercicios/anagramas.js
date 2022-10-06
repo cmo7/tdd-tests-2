@@ -5,5 +5,5 @@
  * @return {boolean}
  */
 export function esAnagrama(palabra1, palabra2) {
-    return false;
+    return true;
 }

@@ -4,6 +4,9 @@
  * @return {boolean}
  */
 export function esPrimo(n) {
+    for (let i = n - 1; i > 1; i--) {
+        if (n % i === 0) return false;
+    }
     return true;
 }
 
@@ -15,5 +18,15 @@ export function esPrimo(n) {
  * @return {boolean}
  */
 export function enesimoPrimo(n) {
-    return true;
+    let primosEncontrados = 0;
+    let ultimoPrimoEncontrado = 1;
+    let siguienteCandidato = 1;
+    while (primosEncontrados < n) {
+        if (esPrimo(siguienteCandidato)) {
+            ultimoPrimoEncontrado = siguienteCandidato;
+            primosEncontrados++;
+        }
+        siguienteCandidato++;
+    }
+    return ultimoPrimoEncontrado;
 }

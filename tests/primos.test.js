@@ -22,7 +22,7 @@ describe('La función enesimoPrimo', () => {
         expect(enesimoPrimo(2)).toBe(2);
         expect(enesimoPrimo(3)).toBe(3);
         expect(enesimoPrimo(4)).toBe(5);
-        expect(enesimoPrimo(4)).toBe(7);
-        expect(enesimoPrimo(4)).toBe(11);
+        expect(enesimoPrimo(5)).toBe(7);
+        expect(enesimoPrimo(6)).toBe(11);
     });
 });

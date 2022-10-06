@@ -5,7 +5,8 @@
  * @return {boolean}
  */
 export function esCuadrado(n) {
-    return true;
+    const raiz = Math.sqrt(n);
+    return raiz === Math.round(raiz);
 }
 
 /**
@@ -14,5 +15,5 @@ export function esCuadrado(n) {
  * @return {boolean}
  */
 export function todosSonCuadrados(lista) {
-    return true;
+    return lista.every(esCuadrado);
 }

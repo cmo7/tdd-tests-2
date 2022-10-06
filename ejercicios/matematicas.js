@@ -4,7 +4,9 @@
  * @return {number}
  */
 export function suma(lista) {
-    return 0;
+    let resultado = 0;
+    lista.forEach((x) => resultado += x);
+    return resultado;
 }
 
 /**
@@ -13,7 +15,7 @@ export function suma(lista) {
  * @return {number}
  */
 export function media(lista) {
-    return 0;
+    return suma(lista) / lista.length;
 }
 
 /**
@@ -22,7 +24,13 @@ export function media(lista) {
  * @return {number}
  */
 export function maximo(lista) {
-    return 0;
+    let resultado = -Infinity;
+    lista.forEach((x) => {
+        if (x > resultado) {
+            resultado = x;
+        }
+    });
+    return resultado;
 }
 
 /**
@@ -31,5 +39,11 @@ export function maximo(lista) {
  * @return {number}
  */
 export function minimo(lista) {
-    return 0;
+    let resultado = Infinity;
+    lista.forEach((x) => {
+        if (x < resultado) {
+            resultado = x;
+        }
+    });
+    return resultado;
 }
